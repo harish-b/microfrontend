@@ -1,34 +1,6 @@
 # microfrontend
 A basic micro front end app using Module Federation of Webpack
 
-## webpack.config
-
-{
-	mode:development,
-	devServer: {port: 8081},
-	plugins: [
-		new ModuleFederationPlugin(
-			{
-				name:
-				filename:
-				exposes:
-				shared: ['faker']
-				shared: { faker: {singleton: true}}
-			}
-			{
-				name:
-				remotes:
-			}
-		)
-		new HTMLWebpackPlugin(
-			{
-				template: 'public/index.js'
-			}
-		)
-	]
-	
-}
-
 ## Points to remember
 
 * Difference between webpack and webpack serve
